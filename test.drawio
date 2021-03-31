@@ -1,106 +1,287 @@
-<mxfile host="app.diagrams.net" modified="2021-01-09T07:24:45.884Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="0PZjnatyP51wroD4NCbc" version="14.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-31T06:40:09.668Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="eaPRH7zAcDml-Lt5EPfX" version="14.5.3" type="github">
   <diagram id="Y9k13piqR9nWIuFRmVgr" name="Page-1">
-    <mxGraphModel dx="1673" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3128" dy="1524" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Times New Roman;" edge="1" parent="1" source="zEdGzOakuQvcwKxF2MUP-1">
+        <mxCell id="jT_67AQT909SQWVjMEZB-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-1" target="jT_67AQT909SQWVjMEZB-2">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="380" y="60" as="targetPoint" />
+            <mxPoint x="300" y="80" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-1" value="IA数据采集" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="335" y="10" width="90" height="30" as="geometry" />
+        <mxCell id="jT_67AQT909SQWVjMEZB-1" value="1、客流量时空分布&lt;br&gt;2、出行分布&lt;br&gt;3、路线站点信息&lt;br&gt;4、车辆人员配置" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=0;align=left;" vertex="1" parent="1">
+          <mxGeometry x="120" y="50" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Times New Roman;" edge="1" parent="1" source="zEdGzOakuQvcwKxF2MUP-6" target="zEdGzOakuQvcwKxF2MUP-10">
+        <mxCell id="jT_67AQT909SQWVjMEZB-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-2" target="jT_67AQT909SQWVjMEZB-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-2" value="根据1、2、3、4制定发车间隔&lt;br&gt;目标：最小化乘客候车时间（假设乘客到站满足泊松分布，计算总等候时间）&lt;br&gt;约束：包括载量约束、最大最小发车间隔约束、人车数量约束" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="290" y="40" width="410" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-14" target="jT_67AQT909SQWVjMEZB-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-14" value="5、车辆状态信号&lt;br&gt;6、发车间隔&lt;br&gt;7、路线、站台信息&lt;br&gt;8、全程行驶时间/里程" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=0;align=left;" vertex="1" parent="1">
+          <mxGeometry x="120" y="190" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-24" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-19" target="jT_67AQT909SQWVjMEZB-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-25" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-19" target="jT_67AQT909SQWVjMEZB-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-19" value="车辆是否良好" style="rhombus;whiteSpace=wrap;html=1;rounded=1;shadow=0;fillColor=#dae8fc;align=left;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="290" y="180" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.009;entryY=0.633;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-20" target="jT_67AQT909SQWVjMEZB-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-20" value="对于该车辆，划分时间段，编码方式：01编码表示是否出车，实数编码表示出车编号" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#fff2cc;align=left;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="420" y="160" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-21" value="不对该车辆进行编码" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#fa6800;align=left;strokeColor=#C73500;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="420" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-27" target="jT_67AQT909SQWVjMEZB-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-27" value="目标：最大化车辆利用率（最小化空车等侯、运行时间）&lt;br&gt;约束：包括休息时长、行车链衔接、人员工作时长等约束" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="608" y="180" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-28" target="jT_67AQT909SQWVjMEZB-14">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="380" y="130" />
-              <mxPoint x="565" y="130" />
+              <mxPoint x="780" y="140" />
+              <mxPoint x="100" y="140" />
+              <mxPoint x="100" y="220" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Times New Roman;" edge="1" parent="1" source="zEdGzOakuQvcwKxF2MUP-6" target="zEdGzOakuQvcwKxF2MUP-13">
+        <mxCell id="jT_67AQT909SQWVjMEZB-28" value="解码为发车间隔（每个时间段的发车频率）" style="whiteSpace=wrap;html=1;rounded=1;shadow=0;align=left;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="720" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-31" value="解码为静态排班方案（发车计划表）" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#fff2cc;align=left;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="870" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-37" target="jT_67AQT909SQWVjMEZB-40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-6" value="在pieces表中, 关键字段&amp;lt;复判结果&amp;gt;是否为空？" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
-          <mxGeometry x="280" y="60" width="200" height="60" as="geometry" />
+        <mxCell id="jT_67AQT909SQWVjMEZB-37" value="9、加氢站状态信息&lt;br&gt;10、车辆状态信息&lt;br&gt;11、静态排班表&lt;br&gt;12、加氢路线" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=0;align=left;" vertex="1" parent="1">
+          <mxGeometry x="120" y="411" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-7" value="IA_OK" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="200" y="240" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-10" value="丢弃" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="505" y="150" width="120" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-11" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="450" y="120" width="30" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Times New Roman;" edge="1" parent="1" source="zEdGzOakuQvcwKxF2MUP-13" target="zEdGzOakuQvcwKxF2MUP-7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Times New Roman;" edge="1" parent="1" source="zEdGzOakuQvcwKxF2MUP-13" target="zEdGzOakuQvcwKxF2MUP-16">
+        <mxCell id="jT_67AQT909SQWVjMEZB-38" value="立刻启动加氢" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-40" target="jT_67AQT909SQWVjMEZB-52">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="391" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="380" y="230" />
-              <mxPoint x="510" y="230" />
+              <mxPoint x="430" y="441" />
+              <mxPoint x="430" y="391" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-13" value="复判结果=OK？" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
-          <mxGeometry x="280" y="150" width="200" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Times New Roman;" edge="1" parent="1" source="zEdGzOakuQvcwKxF2MUP-16" target="zEdGzOakuQvcwKxF2MUP-29">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-16" value="IA_NG" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="450" y="240" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-22" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="305" y="220" width="30" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-25" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="475" y="210" width="30" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Times New Roman;" edge="1" parent="1" source="zEdGzOakuQvcwKxF2MUP-27" target="zEdGzOakuQvcwKxF2MUP-42">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-27" value="根据IA_OK玻璃上的frameid到defect表抓取featurevalues, 赋予标签1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="200" y="300" width="120" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Times New Roman;" edge="1" parent="1" source="zEdGzOakuQvcwKxF2MUP-29" target="zEdGzOakuQvcwKxF2MUP-33">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1.167;entryY=1.208;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Times New Roman;" edge="1" parent="1" source="zEdGzOakuQvcwKxF2MUP-29" target="zEdGzOakuQvcwKxF2MUP-30">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-29" value="对于frameid上每个ROI点位,判断点位是否RE_result=NG" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
-          <mxGeometry x="410" y="325" width="200" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-30" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="475" y="385" width="30" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-33" value="丢弃" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="640" y="345" width="120" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-9" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="625" y="325" width="30" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Times New Roman;" edge="1" parent="1" source="zEdGzOakuQvcwKxF2MUP-40">
+        <mxCell id="jT_67AQT909SQWVjMEZB-39" value="不立刻启动加氢" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-40" target="jT_67AQT909SQWVjMEZB-43">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="410" y="530" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="430" y="441" />
+              <mxPoint x="430" y="541" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-40" value="根据IA_NG玻璃上的frameid到defect表抓取featurevalues, 赋予标签0" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="450" y="410" width="120" height="70" as="geometry" />
+        <mxCell id="jT_67AQT909SQWVjMEZB-40" value="剩余容量监控" style="rhombus;whiteSpace=wrap;html=1;rounded=1;shadow=0;fillColor=#dae8fc;align=left;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="290" y="401" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Times New Roman;" edge="1" parent="1" source="zEdGzOakuQvcwKxF2MUP-42" target="zEdGzOakuQvcwKxF2MUP-49">
+        <mxCell id="jT_67AQT909SQWVjMEZB-43" value="锁定改车辆的编码" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#fa6800;align=left;strokeColor=#C73500;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="490" y="511" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-46" target="jT_67AQT909SQWVjMEZB-62">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-42" value="将featurevalues的内部特征值展开, 拼接" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="305" y="530" width="210" height="70" as="geometry" />
+        <mxCell id="jT_67AQT909SQWVjMEZB-46" value="目标：最小化加氢时耗+能耗&lt;br&gt;约束：供&amp;gt;需、续航能力约束、容量约束、行车链衔接" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#fff2cc;align=left;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="770" y="361" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="zEdGzOakuQvcwKxF2MUP-49" value="加入一些辅助字段, 以csv格式输出数据" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="305" y="620" width="210" height="30" as="geometry" />
+        <mxCell id="jT_67AQT909SQWVjMEZB-55" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.012;entryY=0.419;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-52">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="588.1999999999998" y="346.1399999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-56" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-52" target="jT_67AQT909SQWVjMEZB-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-52" value="是否到达场站" style="rhombus;whiteSpace=wrap;html=1;rounded=1;shadow=0;fillColor=#dae8fc;align=left;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="480" y="351" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="jT_67AQT909SQWVjMEZB-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="351" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-53" value="&lt;span style=&quot;text-align: left&quot;&gt;对于该车辆，编码方式：实数编码表示加氢时刻、出发站点、加氢站编号、到达时间&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="590" y="320" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-54" target="jT_67AQT909SQWVjMEZB-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-54" value="&lt;span style=&quot;text-align: left&quot;&gt;对于该车辆，编码方式：实数编码表示预计加氢时刻、出发站点、加氢站编号、预计到达时间&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="590" y="401" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-62" value="解码为新的静态排班方案，包含加氢调度指令" style="whiteSpace=wrap;html=1;rounded=1;shadow=0;align=left;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="790" y="501" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-64" target="jT_67AQT909SQWVjMEZB-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-64" target="jT_67AQT909SQWVjMEZB-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-64" target="jT_67AQT909SQWVjMEZB-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-64" target="jT_67AQT909SQWVjMEZB-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-64" value="12、车辆预警信号&lt;br&gt;13、车辆行驶状态&lt;br&gt;14、道路车流状态" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=0;align=left;" vertex="1" parent="1">
+          <mxGeometry x="110" y="901" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-68" value="突增" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-65" target="jT_67AQT909SQWVjMEZB-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-69" value="突减" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-65" target="jT_67AQT909SQWVjMEZB-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-65" value="出行需求突变" style="rhombus;whiteSpace=wrap;html=1;rounded=1;shadow=0;fillColor=#dae8fc;align=left;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="290" y="631" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-66" value="旅游巴：计算需求量，加发备用车&lt;br&gt;公交巴：统计变化规律，更新发车间隔+排班表" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#fff2cc;align=left;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="420" y="611" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-67" value="旅游巴：不改变发车计划&lt;br&gt;公交巴：统计变化规律，更新发车间隔+排班表" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#fff2cc;align=left;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="420" y="701" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-72" target="jT_67AQT909SQWVjMEZB-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-72" value="堵塞，大间隔" style="rhombus;whiteSpace=wrap;html=1;rounded=1;shadow=0;fillColor=#dae8fc;align=left;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="290" y="821" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-80" value="公交" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-76" target="jT_67AQT909SQWVjMEZB-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-81" value="旅游" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-76" target="jT_67AQT909SQWVjMEZB-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-76" value="公交？旅游" style="rhombus;whiteSpace=wrap;html=1;rounded=1;shadow=0;fillColor=#dae8fc;align=left;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="410" y="821" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-78" value="大间隔后面车辆越站" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#fff2cc;align=left;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="540" y="791" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-79" value="不越站" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#fff2cc;align=left;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="540" y="871" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-82" target="jT_67AQT909SQWVjMEZB-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-82" value="&amp;nbsp; &amp;nbsp;车辆故障" style="rhombus;whiteSpace=wrap;html=1;rounded=1;shadow=0;fillColor=#dae8fc;align=left;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="290" y="971" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-83" target="jT_67AQT909SQWVjMEZB-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-83" value="锁定事故车辆" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#fa6800;align=left;strokeColor=#C73500;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="400" y="981" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-89" value="需要" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-85" target="jT_67AQT909SQWVjMEZB-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-90" value="不需要" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-85" target="jT_67AQT909SQWVjMEZB-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-85" value="是否需要备用车" style="rhombus;whiteSpace=wrap;html=1;rounded=1;shadow=0;fillColor=#dae8fc;align=left;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="505" y="971" width="105" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-87" value="备用车前往出事点接客，故障所在时段的车辆更改发车间隔" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#fff2cc;align=left;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="680" y="941" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-88" value="故障所在时段的车辆更改发车间隔" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#fff2cc;align=left;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="680" y="1021" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-92">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="1181" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-92" value="&amp;nbsp; &amp;nbsp;车辆晚点" style="rhombus;whiteSpace=wrap;html=1;rounded=1;shadow=0;fillColor=#dae8fc;align=left;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="290" y="1141" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-93" value="公交" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-95" target="jT_67AQT909SQWVjMEZB-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-94" value="旅游" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-95" target="jT_67AQT909SQWVjMEZB-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-95" value="公交？旅游" style="rhombus;whiteSpace=wrap;html=1;rounded=1;shadow=0;fillColor=#dae8fc;align=left;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="395" y="1141" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-96" value="晚点车辆越站运行" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#fff2cc;align=left;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="525" y="1111" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-97" value="备用车辆替换" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#fff2cc;align=left;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="525" y="1191" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-122" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-105" target="jT_67AQT909SQWVjMEZB-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-105" value="决策变量编码，目标函数编码，场景约束编码" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#dae8fc;align=left;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="50" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-106">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1314.4285714285716" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-106" value="生成多个初始解（可行性方案）" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#dae8fc;align=left;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1225" y="150" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-108" target="jT_67AQT909SQWVjMEZB-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-108" value="计算每个方案的目标函数值" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#dae8fc;align=left;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="240" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-109">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1317.2857142857142" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-109" value="非支配排序+拥挤度计算" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#dae8fc;align=left;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1242" y="330" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-110" target="jT_67AQT909SQWVjMEZB-111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-110" value="方案更新：选择、交叉、变异" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#dae8fc;align=left;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1232.5" y="525" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-111" target="jT_67AQT909SQWVjMEZB-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-111" value="非支配排序+拥挤度计算" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;fillColor=#dae8fc;align=left;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1242" y="610" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-117" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-112">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1317.2857142857142" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-121" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="jT_67AQT909SQWVjMEZB-112">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1400" y="450.82352941176475" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-112" value="&amp;nbsp; &amp;nbsp; 终止条件？" style="rhombus;whiteSpace=wrap;html=1;rounded=1;shadow=0;fillColor=#e1d5e7;align=left;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1277" y="411" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jT_67AQT909SQWVjMEZB-113" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 结束" style="ellipse;whiteSpace=wrap;html=1;rounded=1;shadow=0;fillColor=#f8cecc;align=left;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1405" y="431" width="95" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
